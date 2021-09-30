@@ -1,3 +1,0 @@
-#!/bin/sh
-
-mpv --no-terminal --profile=1080p https://www.youtube.com/watch\?v\=5qap5aO4i9A &

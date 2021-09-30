@@ -1,0 +1,11 @@
+#!/bin/sh
+if test "$1" == 'lofi'; then
+  mpv --no-terminal --profile=1080p https://www.youtube.com/watch\?v\=5qap5aO4i9A &
+else
+  if test "$1" == 'rob'; then
+   mpv --no-terminal --profile=1080p https://www.twitch.tv/rwxrob &
+  else
+   echo "No stream selected";
+  fi
+fi
+
