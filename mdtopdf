@@ -1,0 +1,11 @@
+#!/bin/sh
+if test -r "${1%.*}.pdf" ; then
+  printf "File exists. Do you want to overwrite? (y/n)"; read -r input;
+  if [ "$input" = 'y' ] || [ "$input" = 'Y' ] ; then
+    echo "Overwriting ${1%.*}.pdf";
+  else
+    echo "Aborting...";
+    exit;
+  fi
+fi
+  pandoc "$1" -o "${1%.*}.pdf";

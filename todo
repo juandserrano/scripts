@@ -1,0 +1,11 @@
+#!/bin/sh
+
+todo="$2";
+if test "$1" == 'add'; then
+  echo "1. $todo" >> "$HOME/todo.md";
+#  mdtopdf "$HOME/todo.md";
+fi
+
+if test "$1" == 'view'; then
+  cat "$HOME/todo.md";
+fi
