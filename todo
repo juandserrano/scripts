@@ -9,3 +9,7 @@ fi
 if test "$1" == 'view'; then
   cat "$HOME/todo.md";
 fi
+
+if test "$1" == 'edit'; then
+  nvim "$HOME/todo.md";
+fi
